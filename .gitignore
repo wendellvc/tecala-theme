@@ -1,0 +1,15 @@
+# Ignore folders with output which is built.
+assets/css/
+assets/js/
+assets/images/
+develop/languages/
+
+# Ignore node_modules.
+node_modules/
+
+# Ignore local PHPCS config file.
+phpcs.xml
+
+# Ignore .lock & *-lock.json files.
+*.lock
+*-lock.json

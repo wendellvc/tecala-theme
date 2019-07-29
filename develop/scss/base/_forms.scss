@@ -1,0 +1,66 @@
+form {
+	margin-bottom: 25px;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+	background-color: $color-default-white;
+	border: 1px solid $color-grey-golf;
+	border-radius: 4px;
+	box-shadow: none;
+	height: 38px;
+	padding: 6px 10px;
+
+	&:focus {
+		border: 1px solid $color-blue-bravo;
+		outline: 0;
+	}
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+	appearance: none;
+}
+
+textarea {
+	min-height: 65px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+}
+
+label,
+legend {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+fieldset {
+	padding: 0;
+	border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: inline;
+}
+
+input,
+textarea,
+select,
+fieldset {
+	margin-bottom: 15px;
+}

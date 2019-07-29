@@ -1,0 +1,58 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	color: $color-default-black;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.6;
+}
+
+p {
+	margin-bottom: 25px;
+	margin-top: 0;
+}
+
+a {
+	color: $color-blue-alpha;
+	text-decoration: underline;
+
+	&:active,
+	&:hover,
+	&:focus {
+		color: darken($color-blue-alpha, 5%);
+		text-decoration: none;
+	}
+}
+
+strong {
+	font-weight: 700;
+}
+
+hr {
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 1px solid $color-grey-alpha;
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+
+pre,
+blockquote,
+dl,
+figure {
+	margin-bottom: 25px;
+}
+
+img,
+picture {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}

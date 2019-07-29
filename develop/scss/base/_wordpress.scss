@@ -1,0 +1,60 @@
+/* ## Screen Reader Text
+--------------------------------------------- */
+.screen-reader-text,
+.screen-reader-text span,
+.screen-reader-shortcut {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(100%);
+	height: 1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+
+	&:active,
+	&:focus {
+		clip: auto;
+		clip-path: none;
+		height: auto;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+}
+
+/* ## Alignment
+--------------------------------------------- */
+.alignnone,
+.alignleft,
+.alignright {
+	display: block;
+	margin-bottom: 15px;
+
+	@include media($screen--m) {
+		margin-bottom: 30px;
+	}
+}
+
+.alignleft {
+	@include media($screen--s) {
+		float: left;
+		margin-right: 15px;
+	}
+
+	@include media($screen--m) {
+		margin-right: 30px;
+	}
+}
+
+.alignright {
+	@include media($screen--s) {
+		float: right;
+		margin-left: 15px;
+	}
+
+	@include media($screen--m) {
+		margin-left: 30px;
+	}
+}
+
