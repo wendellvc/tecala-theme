@@ -1,0 +1,21 @@
+{
+  "name": "boilerplate/theme",
+  "type": "wordpress-theme",
+  "description": "A simple starter theme for WordPress projects, developed by Intimation Creative.",
+  "homepage": "https://intimation.uk",
+  "authors": [
+    {
+      "name": "Craig Simpson",
+      "email": "craig.simpson@intimation.uk",
+      "homepage": "https://intimation.uk",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "sort-order": true
+  },
+  "require": {
+    "php": ">=7.0",
+    "composer/installers": "~1.0"
+  }
+}
