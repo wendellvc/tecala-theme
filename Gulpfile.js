@@ -32,7 +32,7 @@ const config = {
 	project: {
 		name: 'Boilerplate',
 		textDomain: 'boilerplate',
-		destPath: 'languages/',
+		destPath: 'develop/languages/',
 		localURL: 'https://boilerplate.localhost'
 	},
 	scss: [
