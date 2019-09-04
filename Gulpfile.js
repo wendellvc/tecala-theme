@@ -143,7 +143,7 @@ function i18n() {
 			domain: config.project.textDomain,
 			package: config.project.name
 		}))
-		.pipe(gulp.dest('languages/' + config.project.textDomain + '.pot'));
+		.pipe(gulp.dest(config.project.destPath + config.project.textDomain + '.pot'));
 }
 
 function images() {
