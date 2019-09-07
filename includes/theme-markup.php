@@ -44,3 +44,17 @@ add_action( 'genesis_doctype', __NAMESPACE__ . '\\boilerplate_do_doctype' );
 function boilerplate_do_doctype() {
 	include locate_template( 'template-parts/doctype.php' );
 }
+
+add_filter( 'wp_get_attachment_image_attributes', __NAMESPACE__ . '\\boilerplate_lazy_load_images' );
+/**
+ * Filter in the new loading attribute on images.
+ *
+ * @param array $attributes Existing image attributes.
+ *
+ * @return array
+ */
+function boilerplate_lazy_load_images( $attributes ) {
+	return array_merge( $attributes, [
+		'loading' => 'lazy'
+	] );
+}
