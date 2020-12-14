@@ -1,12 +1,12 @@
 {
-  "name": "boilerplate/theme",
+  "name": "ping-insure/ping-insure",
   "type": "wordpress-theme",
   "description": "A simple starter theme for WordPress projects, developed by Intimation Creative.",
   "homepage": "https://intimation.uk",
   "authors": [
     {
-      "name": "Craig Simpson",
-      "email": "craig.simpson@intimation.uk",
+      "name": "Wendell Cabalhin",
+      "email": "wendell.cabalhin@intimation.co.uk",
       "homepage": "https://intimation.uk",
       "role": "Developer"
     }
