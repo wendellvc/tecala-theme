@@ -30,12 +30,17 @@ const uglify = require('gulp-uglify');
 const config = {
 	manifest: 'assets.json',
 	project: {
-		name: 'Boilerplate',
-		textDomain: 'boilerplate',
+		name: 'Ping Insurance',
+		textDomain: 'ping-insure',
 		destPath: 'develop/languages/',
-		localURL: 'https://boilerplate.localhost'
+		localURL: 'https://ping-insure.localhost'
 	},
 	scss: [
+		{
+			src: 'develop/scss/global.scss',
+			destFileName: 'global.css',
+			destPath: 'assets/css/'
+		},
 		{
 			src: 'develop/scss/style.scss',
 			destFileName: 'style.css',
@@ -50,7 +55,7 @@ const config = {
 	js: [
 		{
 			src: [
-				'develop/js/boilerplate.js'
+				'develop/js/global.js'
 			],
 			destFileName: 'boilerplate.js',
 			destPath: 'assets/js/'
