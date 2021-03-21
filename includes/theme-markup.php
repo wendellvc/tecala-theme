@@ -95,47 +95,11 @@ function custom_output_after_header_wrap() {
 }
 
 
-/* hero/banner */
-// add_action( 'genesis_header', __NAMESPACE__ . '\\hero_banner');
-// function hero_banner() {
-// 	include locate_template( 'template-parts/header/hero.php' );
-// }
-
 /*
 ** main content - ACF
 */
 add_action( 'genesis_after_loop', 'genesis_do_loop' );
-// add_action( 'genesis_after_loop', __NAMESPACE__ . '\\custom_output_flex_content' );
-//
-// /*
-// ** Output flex content section.
-// */
-// function custom_output_flex_content() {
-// 	$post_id           = get_the_ID();
-// 	$prefix            = 'flexible_content';
-// 	$flex_content_rows = get_post_meta( $post_id, $prefix, true );
-//
-// 	if ( ! is_singular() || ! $flex_content_rows ) {
-// 		return;
-// 	}
-//
-// 	if( $flex_content_rows ) :
-// 	// print_r($flex_content_rows);
-// 		foreach ( $flex_content_rows as $idx => $row ) :
-// 			switch ( $row ) {
-// 				case 'hero':
-// 					// echo $idx; print_r($row);
-// 					include locate_template( 'template-parts/flexible-contents/hero.php' );
-// 					break;
-// 				case 'section':
-// 					// echo $idx; print_r($row);
-// 					include locate_template( 'template-parts/flexible-contents/section.php' );
-// 					break;
-// 			}
-// 		endforeach;
-// 	endif;
-//
-// }
+
 
 
 /*
