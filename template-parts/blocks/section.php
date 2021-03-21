@@ -21,7 +21,7 @@ $boxes = get_field('boxes');
 $classSection = strtolower(str_replace(' ', '_', $section));
 ?>
 
-<div class="<?php echo esc_attr($className); ?> <?php echo esc_attr($classSection); ?>">
+<div id="<?php echo esc_attr($classSection); ?>" class="<?php echo esc_attr($className); ?> <?php echo esc_attr($classSection); ?>">
   <?php if(!empty($bg_image)) : ?>
   <div class="with_bg_wrapper" style="background-image: url('<?php echo $bg_image; ?>');">
   <?php endif; ?>
