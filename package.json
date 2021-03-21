@@ -1,8 +1,8 @@
 {
-  "name": "boilerplate",
+  "name": "tecala",
   "version": "0.1.0",
-  "description": "A simple starter theme for WordPress projects, developed by Intimation Creative.",
-  "homepage": "https://intimation.uk",
+  "description": "A simple starter theme for WordPress projects.",
+  "homepage": "",
   "keywords": [
     "Boilerplate",
     "Genesis",
@@ -10,14 +10,14 @@
     "child theme"
   ],
   "bugs": {
-    "url": "https://intimation.dev/boilerplate/theme/issues"
+    "url": ""
   },
   "license": "MIT",
-  "author": "Craig Simpson <craig.simpson@intimation.uk>",
-  "repository": "https://intimation.dev/boilerplate/theme.git",
+  "author": "wendell cabalhin <cabalhinwendell@gmail.com>",
+  "repository": "",
   "devDependencies": {
     "autoprefixer": "^9.6.1",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.14",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",

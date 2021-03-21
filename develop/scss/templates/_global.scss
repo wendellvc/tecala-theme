@@ -1,0 +1,479 @@
+/* VARIABLES */
+$blue: #003878;
+$white: #fff;
+$green: #0CA9A3;
+$orange: #f47820;
+$black: #0c0c0e;
+
+/* BODY */
+body, html { margin: 0; font-family: 'Work Sans', sans-serif; font-weight: 400; }
+
+h2{ font-size: 57px; font-weight: 700; letter-spacing: -4px; line-height: 1; }
+h3{ font-size: 57px; font-weight: 300; line-height: 1; }
+
+a { text-decoration: none; outline: none;
+  &:hover { text-decoration: none; }
+  &:focus { outline: none; }
+}
+
+.btn, .nav-item{
+  line-height: 1;
+  margin-bottom: 0;
+  height: 75px;
+}
+.btn{
+  border-radius: 40px;
+  padding: 0 34px;
+  color: $white;
+  a{
+    color: $white;
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+}
+
+.btn-blue { background-color: $blue; }
+.btn-orange { background-color: $orange; }
+
+/* Header */
+.site-header { /* background-color: $dark-blue; min-height: 190px; color: $white; */
+  // .wrap { display: flex; align-items: center; /*min-height: 190px;*/ }
+  .title-area { width: 50%; }
+  .site-title { margin-bottom: 0;
+    a { color: transparent; min-width: 215px; height: 60px; display: inline-block; }
+  }
+  .navbar{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .container-fluid{
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  .navbar-collapse{
+    flex-grow: unset;
+    width: 100%;
+    #primary-menu-list{
+      align-items: center;
+      width: 100%;
+      justify-content: flex-end;
+      .nav-item{
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        a {
+          color: $black;
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        &.btn{
+          margin-right: 10px;
+          max-width: 236px;
+          width: 100%;
+          justify-content: center;
+          a { font-size: 20px; color: $white; font-weight: 700; }
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Hero */
+.hero{
+  .hero-wrapper{
+    padding: 278px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+    h2{
+      font-size: 80px;
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 50px;
+      p{
+        line-height: 1;
+        margin-bottom: 0;
+      }
+      span{
+        font-weight: 700;
+      }
+    }
+    h3{
+      font-size: 29px;
+      font-weight: 700;
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+  }
+}
+
+/* Section */
+.section{
+  h6{
+    color: #939393;
+    font-size: 22px;
+  }
+  &.area_of_expertise{
+    background-color: $blue;
+    color: $white;
+    padding: 100px 0 0;
+    font-size: 20px;
+    letter-spacing: -1.2px;
+    font-weight: 300;
+    h2{
+      letter-spacing: -4px;
+      margin-bottom: 10px;
+    }
+    h3{
+      font-size: 50px;
+      letter-spacing: -.5px;
+      margin-bottom: 30px;
+    }
+    p{
+      span{
+        font-size: 20px;
+        font-weight: 700;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.why_tecala{
+    background-color: #eaeceb;
+    .with_bg_wrapper{
+      padding: 100px 0 200px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: right bottom;
+      font-size: 20px;
+      letter-spacing: -1.3px;
+      font-weight: 300;
+      label{
+        color: $orange;
+        font-size: 70px;
+        line-height: 1;
+      }
+      h3{
+        letter-spacing: -2px;
+      }
+      .box{
+        &.box-left{
+          &:first-child{
+            margin-bottom: 70px;
+          }
+        }
+      }
+      .box-right-wrapper{
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &.business_outcome{
+    padding: 100px 0;
+    h2{
+      margin-bottom: 50px;
+    }
+    .box{
+      display: flex;
+      justify-content: center;
+      .box-wrapper{
+        margin: 0 20px;
+        .img-wrapper{
+          display: flex;
+          align-items: center;
+          height: 134px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+/* Boxes */
+.boxes{
+  &.area_of_expertise{
+    background-color: $blue;
+    color: $white;
+    padding: 30px 0 100px;
+    .box{
+      text-align: center;
+      .img-wrapper{
+        margin-bottom: 30px;
+        height: 124px;
+      }
+      h4{
+        margin-bottom: 0;
+        font-size: 24px;
+        p{
+          margin-bottom: 0;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+/* CTA Banner */
+.cta-banner{
+  background-color: $blue;
+  color: $white;
+  padding: 100px 0 0;
+  text-align: center;
+  h3{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .cta-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 240px;
+      &:first-child{
+        border: 2px solid $white;
+        font-weight: 700;
+        font-family: 'Roboto';
+        font-size: 20px;
+        margin-right: 20px;
+      }
+      &:last-child{
+        background-color: $orange;
+        font-weight: 700;
+        font-family: 'Roboto';
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+/* Footer */
+.site-footer{ background-color: $blue;
+  .site-footer-wrapper{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title-area { width: 50%; }
+  .site-title { margin-bottom: 0; display: flex; align-items: center;
+    a { color: transparent; min-width: 122px; height: 34px; display: inline-block; background: url('../img/footer-logo.png') no-repeat !important; }
+  }
+  .copyright{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    color: $white;
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1400px){
+  .site-header .navbar-collapse #primary-menu-list .nav-item{
+    margin-right: 20px;
+    justify-content: center;
+  }
+  .site-header .navbar-collapse #primary-menu-list .nav-item a{
+    text-align: center;
+  }
+  .section.why_tecala{
+    h2{
+      p{
+        br{
+          display: none;
+        }
+      }
+    }
+    h3{
+      p{
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .site-header .navbar-collapse #primary-menu-list .nav-item{
+    margin-right: 0;
+    max-width: 172px;
+    width: 100%;
+  }
+  .site-header .navbar-collapse #primary-menu-list .nav-item.btn{
+    padding: 0 25px;
+  }
+  .section.why_tecala{
+    h2{
+      p{
+        br{
+          display: none;
+        }
+      }
+    }
+    h3{
+      p{
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .site-header .navbar-collapse #primary-menu-list .nav-item.btn{
+    margin-right: 0;
+  }
+  .site-header .navbar-collapse #primary-menu-list .nav-item.btn.btn-blue{
+    margin-top: 20px;
+  }
+  .site-header .navbar-collapse #primary-menu-list .nav-item:last-child{
+    margin-top: 20px;
+  }
+  .hero{
+    .hero-wrapper{
+      padding: 100px 0;
+      h2{
+        font-size: 60px;
+      }
+    }
+  }
+  .section.area_of_expertise{
+    h2{
+      font-size: 50px;
+    }
+    h3{
+      font-size: 40px;
+    }
+  }
+  .boxes.area_of_expertise .box h4 p{
+    br{ display: none; }
+  }
+  .section.why_tecala{
+    h2{
+      font-size: 50px;
+      p{
+        br{
+          display: none;
+        }
+      }
+    }
+    h3{
+      font-size: 40px;
+      p{
+        br{
+          display: none;
+        }
+      }
+    }
+    .with_bg_wrapper .box{
+      p{
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  .section.business_outcome,
+  .cta-banner {
+    h2{
+      font-size: 50px;
+    }
+    h3{
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .hero{
+    .hero-wrapper{
+      padding: 100px 0;
+      h2{
+        font-size: 40px;
+        p{
+          br{
+            display: none;
+          }
+        }
+      }
+      h3{
+        p{
+          br{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .section.business_outcome,
+  .cta-banner {
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 28px;
+    }
+  }
+  .boxes.area_of_expertise .box{
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .section.area_of_expertise{
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 28px;
+    }
+  }
+  .section.business_outcome,
+  .cta-banner {
+    h2{
+      font-size: 40px;
+    }
+    h3{
+      font-size: 28px;
+    }
+  }
+
+  .cta-banner{
+    .cta-buttons{ display: block;
+      max-width: 240px;
+    margin: 0 auto;
+      .btn{
+        display: block;
+        line-height: 70px;
+        &:last-child{
+          margin-top: 30px; 
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 576px){
+  .d-sm-block {
+    display: flex!important;
+  }
+}

@@ -19,7 +19,7 @@
 	</rule>
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="boilerplate" />
+			<property name="text_domain" type="array" value="ping-insure" />
 		</properties>
 	</rule>
 	<rule ref="WordPress.WP.DeprecatedFunctions">

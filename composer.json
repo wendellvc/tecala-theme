@@ -1,13 +1,13 @@
 {
-  "name": "ping-insure/ping-insure",
+  "name": "tecala",
   "type": "wordpress-theme",
-  "description": "A simple starter theme for WordPress projects, developed by Intimation Creative.",
-  "homepage": "https://intimation.uk",
+  "description": "A simple starter theme for WordPress projects",
+  "homepage": "",
   "authors": [
     {
       "name": "Wendell Cabalhin",
-      "email": "wendell.cabalhin@intimation.co.uk",
-      "homepage": "https://intimation.uk",
+      "email": "cabalhiwendell@gmail.com",
+      "homepage": "",
       "role": "Developer"
     }
   ],

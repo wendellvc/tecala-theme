@@ -2,13 +2,13 @@
 /**
  * Theme setup.
  *
- * @package   Boilerplate\Theme
- * @author    Craig Simpson <craig.simpson@intimation.uk>
- * @copyright Copyright (c) 2019, Intimation Creative
+ * @package   BedrockBoilerplate\Theme
+ * @author    Wendell Cabalhin <cabalhinwendell@gmail.com>
+ * @copyright Copyright (c) 2021
  * @copyright MIT
  */
 
-namespace Boilerplate\Theme;
+namespace Tecala\Theme;
 
 add_action( 'genesis_setup', __NAMESPACE__ . '\\theme_setup', 15 );
 /**
@@ -29,7 +29,7 @@ function theme_setup() {
 		],
 		'genesis-footer-widgets'      => 4,
 		'genesis-menus'               => [
-			'primary' => __( 'Primary Menu', 'boilerplate' ),
+			'primary' => __( 'Primary Menu', 'tecala' ),
 		],
 		'genesis-responsive-viewport' => null,
 		'genesis-structural-wraps'    => [
@@ -57,6 +57,13 @@ function theme_setup() {
 	];
 
 	array_map( 'add_theme_support', array_keys( $theme_support ), $theme_support );
+	add_theme_support( 'custom-header',
+		array(
+			'header_image' => '',
+			'header-selector' => '.site-title a',
+			'header-text' => false,
+		)
+	);
 
 }
 
@@ -78,4 +85,33 @@ function add_image_sizes() {
 		add_image_size( $name, $args[0], $args[1], isset( $args[2] ) ? $args[2] : false );
 	} );
 
+}
+
+function add_additional_class_on_li($classes, $item, $args) {
+    // if(isset($args->add_li_class)) {
+		// print_r($item);
+
+      $classes[] = 'nav-item';
+			// print_r($classes); echo '<br>';
+    // }
+    return $classes;
+}
+add_filter('nav_menu_css_class', __NAMESPACE__ . '\\add_additional_class_on_li', 1, 3);
+
+////////////////////////////////////////////////////////
+//
+// REQUIRED PLUGINS
+//
+////////////////////////////////////////////////////////
+
+require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
+
+if ( !is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ){
+	add_action( 'admin_notices', __NAMESPACE__ . '\\admin_notice_error_acf' );
+}
+
+function admin_notice_error_acf() {
+	$class = 'notice notice-error';
+	$message = __( 'Advanced Custom Fields Pro is MISSING!', 'tecala');
+	printf( '<div class="%1$s"><p>%2$s</p></div>', $class, $message );
 }

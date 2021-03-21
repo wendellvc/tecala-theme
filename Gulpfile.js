@@ -30,17 +30,12 @@ const uglify = require('gulp-uglify');
 const config = {
 	manifest: 'assets.json',
 	project: {
-		name: 'Ping Insurance',
-		textDomain: 'ping-insure',
+		name: 'Tecala',
+		textDomain: 'tecala',
 		destPath: 'develop/languages/',
-		localURL: 'https://ping-insure.localhost'
+		localURL: 'https://tecala.test'
 	},
 	scss: [
-		{
-			src: 'develop/scss/global.scss',
-			destFileName: 'global.css',
-			destPath: 'assets/css/'
-		},
 		{
 			src: 'develop/scss/style.scss',
 			destFileName: 'style.css',
@@ -57,7 +52,7 @@ const config = {
 			src: [
 				'develop/js/global.js'
 			],
-			destFileName: 'boilerplate.js',
+			destFileName: 'global.js',
 			destPath: 'assets/js/'
 		}
 	]
